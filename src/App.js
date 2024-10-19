@@ -103,7 +103,7 @@ function PasswordProtect({ onUnlock }) {
     e.preventDefault();
     
     // Define the correct password (you can change this)
-    const correctPassword = '1234';
+    const correctPassword = 'TheFutureIsNow';
 
     if (password === correctPassword) {
       onUnlock(); // Call the function to unlock the app
