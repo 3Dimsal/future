@@ -24,7 +24,7 @@ function Banner() {
     }
   });
   // You can also adjust the model's position if needed
-  return <primitive ref={modelRef} object={scene} scale={2} rotation={[Math.PI / 2, 0, 0]} position={[-7, 1, -15]} />;
+  return <primitive ref={modelRef} object={scene} scale={2} rotation={[Math.PI / 2, 0, 0]} position={[-7, 8, -15]} />;
 }
 
 function Mercedes() {
@@ -62,7 +62,7 @@ function Albert() {
     if (mixerRef.current) mixerRef.current.update(delta);
   });
 
-  return <primitive object={scene} scale={2.5} position={[1, -5, -5]} />;
+  return <primitive object={scene} scale={5} position={[2.5, -9.5, -15]} />;
 }
 
 function Esmarline() {
@@ -84,7 +84,7 @@ function Esmarline() {
     if (mixerRef.current) mixerRef.current.update(delta);
   });
 
-  return <primitive object={scene} scale={2.5} position={[-2, -5, -5]} />;
+  return <primitive object={scene} scale={5} position={[-2.5, -9.5, -15]} />;
 }
 
 function Lambo() {
@@ -103,7 +103,7 @@ function PasswordProtect({ onUnlock }) {
     e.preventDefault();
     
     // Define the correct password (you can change this)
-    const correctPassword = 'TheFutureIsNow';
+    const correctPassword = 'Happy';
 
     if (password === correctPassword) {
       onUnlock(); // Call the function to unlock the app
@@ -154,7 +154,7 @@ function AppLG() {
     >
       <ambientLight intensity={2} />
       <directionalLight position={[10, 10, 4]} intensity={3} />
-      <Banner />
+      {/* <Banner /> */}
       <Lambo />
       <Mercedes />
       <Villa />
