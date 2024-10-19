@@ -62,7 +62,7 @@ function Albert() {
     if (mixerRef.current) mixerRef.current.update(delta);
   });
 
-  return <primitive object={scene} scale={5} position={[2.5, -9.5, -15]} />;
+  return <primitive object={scene} scale={5} position={[-1.5, -9.5, -12]} />;
 }
 
 function Esmarline() {
@@ -159,7 +159,7 @@ function AppLG() {
       <Mercedes />
       <Villa />
       <Albert />
-      <Esmarline />
+      {/* <Esmarline /> */}
       <OrbitControls />
     </Canvas>
   );
